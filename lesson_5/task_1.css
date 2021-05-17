@@ -1,0 +1,47 @@
+* {margin: 0; padding: 0;}
+
+:root {
+    --field-size: 80px;
+}
+
+.boardLabelsS, .grid8x8, .boardLineWrap {
+    display: flex;
+}
+
+.boardLabelsN {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boardLabelsSField, .grid8x8, .chessField, .boardLabelsNField {
+    box-sizing: border-box;
+}
+
+.boardLabelsSField {
+    width: var(--field-size);
+    text-align: center;
+}
+
+.boardLabelsNField {
+    display: flex;
+    height: var(--field-size);
+    align-items: center;
+}
+
+.chessField {
+    width: var(--field-size);
+    height: var(--field-size);
+}
+
+.grid8x8 {
+    flex-wrap: wrap;
+    width: calc(var(--field-size) * 8);
+    height: calc(var(--field-size) * 8);
+}
+
+.chessField {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.bgBlack {background-color: black;}
